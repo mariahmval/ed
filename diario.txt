@@ -1,0 +1,6 @@
+20180917
+VirtualBox (pendiente de anotar)
+git clone git https://github.com/mariahmval/ed.git
+git config --global user.name "mariahmval"
+git config --global user.email mariahm@pm.me
+git config --global push.default simple
