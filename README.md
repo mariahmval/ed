@@ -1,2 +1,2 @@
 # ed
-Repositorio para el módulo Entrono de Desarrollo del IES Serpis
+Repositorio para el módulo Entornos de Desarrollo del IES Serpis
