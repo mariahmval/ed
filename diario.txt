@@ -16,8 +16,16 @@ git commit -m "Añadido diario.txt"
 20180924
 En máquina virtual con Ubuntu 16.04 instalamos el jdk de java8:
  sudo add-apt-repository ppa:webupd8team/java
- sudo apt-get update
+ sudo apt update
  apt install oracle-java8-installer
  java -version
 
 Creamos HolaMundo.java, compilamos y ejecutamos.
+
+20180927
+ sudo apt update
+ sudo apt install git
+
+20181001
+ Descargamos eclipse IDE for java developers desde la página oficial de eclipse.
+ Para instalar, simplemente descomprimir.
