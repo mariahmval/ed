@@ -6,27 +6,42 @@ public class Adivina {
 
 	public static void main(String[] args) {
 		
-		int numAdivinanza, num, intentos=0;
+		int numAdivinanza, num, intentos, min, max;
 		Scanner teclado = new Scanner(System.in);
 		
-		numAdivinanza = (int) (Math.random() * ((1000-1) + 1) + 1);
+		min = 1;
+		max = 1000;
+		intentos = 1;
+		numAdivinanza = (int) (Math.random() * 1000) + 1;
 		
 		System.out.println("Estoy pensando un número del 1 al 1000 y tienes que adivinarlo.");
-		System.out.println("Dime un número:");
+		System.out.printf("Dime un número (intento %d):\n", intentos);
 		
 		num = teclado.nextInt();
 		
 		while (num != numAdivinanza) {
 			
-			if (num > numAdivinanza) {
+			if (num < numAdivinanza) {
 				intentos++;
-				System.out.println("Ese número es mayor al que estoy pensando, dime otro:");
+				
+				if (num > min) {
+					min = num + 1;
+				}
+				
+				System.out.println("Es mayor que ese.");
+				System.out.printf("El número se encuentra entre %d y %d (intento %d):\n", min, max, intentos);
+				System.out.println("Prueba de nuevo:");
 				num = teclado.nextInt();
 			}
 			
 			else {
 				intentos++;
-				System.out.println("Ese número es menor al que estoy pensando, dime otro:");
+				if (num < max) {
+					max = num - 1;
+				}
+				System.out.println("Es menor que ese.");
+				System.out.printf("El número se encuentra entre %d y %d (intento %d):\n", min, max, intentos);
+				System.out.println("Prueba de nuevo:");
 				num = teclado.nextInt();
 			}
 			
