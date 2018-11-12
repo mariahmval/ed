@@ -40,31 +40,49 @@ public class Vector {
 	
 	public static int indexOfMin(int[] v) {
 		
-		int menor = 0;
+		int indexOfMin = 0;
 		
 		for (int indice=1 ; indice<v.length ; indice++) {
-			if (v[indice]<v[menor])
-				menor = indice;
+			if (v[indice] < v[indexOfMin])
+				indexOfMin = indice;
 		}
 		
-		return menor;
+		return indexOfMin;
+	}
+	
+	public static int indexOfMin(int[] v, int initialIndex) {
+		
+		int indexOfMin = initialIndex;
+		
+		for (int indice=initialIndex+1 ; indice<v.length ; indice++)
+			if (v[indice] < v[indexOfMin])
+				indexOfMin = indice;
+		
+		return indexOfMin;
+	}
+	
+	public static void swap(int[]v, int indexOne, int indexTwo) {
+		int aux = v[indexOne];
+		v[indexOne] = v[indexTwo];
+		v[indexTwo] = aux;
 	}
 	
 	public static void sort(int[] v) {
 		
-		for(int indice=0 ; indice<v.length-1 ; indice++) {
-			for(int posicion=indice+1 ; posicion<v.length ; posicion++){
-				if(v[indice] > v[posicion]){
-					int auxiliar=v[indice];
-					v[indice]=v[posicion];
-					v[posicion]=auxiliar;
-
-				}
-			}
-		}
+//		for (int indice=0 ; indice<v.length-1 ; indice++) {
+//			for (int posicion=indice+1 ; posicion<v.length ; posicion++)
+//				if (v[indice] > v[posicion]) {
+//					int auxiliar = v[indice];
+//					v[indice] = v[posicion];
+//					v[posicion] = auxiliar;
+//				}
+//		}
+		
+		for (int index=0 ; index<v.length-1 ; index++)
+			swap(v, index, indexOfMin(v, index));
 		
 	}
-	
+		
 	public static void main(String[] args) {
 		/* Problema de búsqueda, el método debe mostrar la posición
 		 * en el vector de un valor del vector */
