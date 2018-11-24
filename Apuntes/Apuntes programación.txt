@@ -1,0 +1,103 @@
+Los paquetes se suelen nombar con el nombre de la empresa que los desarrolla y el nombre del proyecto en el siguiente orden: org.institutoserpis.ed.
+
+En la mayoría de entornos de desarrollo, ctrl+espacio tiene la función de autocompletar. Al menos en eclipse al hacer esto si se utiliza una clase como 'Scanner', también la importa al inicio del programa.
+
+... = new Scanner(System.in); System.in hace referencia al método de entrada por defecto que es el teclado a menos que se reasigne.
+
+En eclipse se importan proyectos desde File>Import...
+
+Los workspace en eclipse se comportan como entidades virtuales separadas.
+
+Los puntos de ruptura te permiten ver el estado del programa en la línea en la que se han colocado y cambia el programa a perspectiva de depuración. Se puede cambiar la perspectiva desde los iconos arriba a la derecha de eclipse.
+
+TEST:
+- Eclipse, probar la clase -> Botón derecho sobre el proyecto -> new -> 'Clase' Test Case.
+- La clase que se crea debe llamarse igual que la clase a probar más test. Ejemplo: ClaseTest
+- En 'Class under test' elegir la clase (hay que introducir caractares en el buscador para que aparezca).
+- Se puede finalizar o pulsar 'Siguiente', donde aparecerán los métodos de la clase y los que hereda.
+- En la clase que se crea modificar el nombre del método creado al mismo del método a probar. Ejemplo: Probamos main, entonces -> testMain -> main
+- Para testear un método debe ser público.
+- Es una buena metodología diseñar antes los tests que probarán si el algoritmo funciona correctamente, para ello éstos deben comprobar paso a paso el número máximo de situaciones que puedan darse y que funciona como se espera. Hay que provocar un error inicial e ir resolviendo. Se termina de probar un algoritmo cuando no se nos ocurren más situaciones que puedan dar error.
+- Siempre que se comprueban conjuntos hay que comprobar las posiciones del principio, del final, del medio, fuera de límites y cuando el vector está vacío.
+
+Esta clase importa clases con métodos de testeo que comienzan por 'assert'. Por ejemplo: assertEquals(valor esperado, valor a probar); comprueba si ambos valores son iguales.
+
+Las variables pueden tener dos tipos:
+Tipo valor:
+ - Ejemplos: int, long, single...
+ - Guardan directamente un valor.
+ - No pueden quedar vacíos, la zona reservada o bien la inicia a 0 o bien contiene datos basura.
+
+Tipo referencia:
+ - Ejemplos: String, vectores...
+ - Guardan una referencia a un valor, la zona reservada es 'null'.
+
+Vector: Se declara como [variable][] [nombre] Ej-> int[] v;
+        Para inicializaro new int[] {valor,...valor}; o new int[5];
+        Llamar a un valor del array [variable][número]
+        Los valores del vector son de tipo valor.
+        Si en una búsqueda en el índice no se encuentra resultado, lo común es que devuelva '-1'.
+        Número de valores de un vector: vector.length
+
+Técnica del centinela: Ejemplo: Crear una posición adicional en el vector donde guardar el valor a buscar, creando una certeza eventual cuando se compare el valor a buscar con esa posición del vector. Haciendo esto se puede eliminar la doble condición en una búsqueda de índice en un vector reduciendo el número de operaciones que se realizarán.
+De (índice < vector.length && vector[índice] != x) a (vector[índice] != x).
+
+Condición 'for each' 'for ([tipo] [nombre] : [variable]) Recorre cada elemento de una colección.
+
+Wirth, Kurth
+
+Tipos de ordenación:
+ - En memoria
+	- In situ
+		- Directo (tiempo n²)
+		   .Selección
+		   .Inserción
+		   .Intercambio
+		- No (tiempo mejores n*log^n)
+		   .Selección (Quicksort)
+		   .Inserción
+		   .Intercambio
+	- No
+ - No
+
+Algoritmo de inserción directa (método de la baraja):
+
+   16 , 12 , 15 , 14 , X
+
+ - Insertamos el número 31 en la primera posición y desplazamos el resto hacia la derecha.
+
+   31 , 16 , 12 , 15 , 14
+
+Procedimiento de ordenación:
+
+   16 , 12 , 15 , 14 , 17
+
+ - Seleccionamos el segundo elemento y buscamos hacia la izquierda en qué posición debería estar
+   y se inserta en esa posición desplazando todos los elementos a la derecha.
+
+   12 , 16 , 15 , 14 , 17
+
+ - El algoritmo continúa comparando en la siguiente posición por cada ciclo realizando la misma
+   operación.
+
+   12 , 15 , 16 , 14 , 17
+
+Monodevelop
+Solución
+ Proyecto(s)
+  bin
+   debug
+  ------.csproj
+ ------.sln
+
+Console.ReadLine
+
+int num1 = 11;
+string num1String = num1.ToString();
+
+string stringNum1 = Console.ReadLine();
+int num1 = int.Parse(stringNum1);
+
+
+void insert(int[] v, int index, int x) {}
+            vector   posicion   valor

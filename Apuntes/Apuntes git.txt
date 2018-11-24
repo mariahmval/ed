@@ -1,0 +1,17 @@
+Clonar repositorio: git clone [URL] [RUTA (opcional)](copia el repositorio en local)
+Estado repositorio: git status (en el directorio del repositorio)
+Registro en git a nivel local: git config --global user.name "John Doe"
+			       git config --global user.email johndoe@example.com
+Mostrar la configuración de git: git config --list
+Configuración inicial push: git config --global push.default simple
+Ver el log de git: git log
+Confirmar cambios para la siguiente versión: git add . (directorio actual) || [RUTA archivo o dir]
+Rechazar cambios para la siguiente versión: git checkout -- . (directorio actual) || [RUTA archivo o dir]
+Volver a la última versión: git checkout -
+Volver a una versión anterior: git checkout [id commit]
+Nueva versión: git commit -m "Comentario" (en local)
+Sincronizar versión remota con la local: git push
+Sincronizar versión local con la remota: git pull
+Mostrar los cambios en el repositorio: git diff
+Retirar cambios añadidos a la siguiente versión: git reset HEAD [archivo]
+(fijarse antes de un 'git add' para ver que no se suben archivos no deseados.
