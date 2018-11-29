@@ -4,20 +4,14 @@ namespace CVector
 {
     class Vector
     {
-        public static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
 
         public static int BinarySearch(int[] v, int x) {
 
             int menor = 0;
-            int mayor;
-            int posicionActiva = v.Length / 2;
+            int mayor = v.Length - 1;
+            int posicionActiva = (menor + mayor) / 2;
 
-            if (v.Length > 0)
-                mayor = v.Length - 1;
-            else
+            if (mayor < 0)
                 return -1;
 
             while (v[posicionActiva] != x && mayor > menor) {
@@ -26,13 +20,30 @@ namespace CVector
                 else
                     menor = posicionActiva + 1;
 
-                posicionActiva = (mayor - menor) / 2 + menor;
+                posicionActiva = (menor + mayor) / 2;
             }
 
             if (v[posicionActiva] == x)
                 return posicionActiva;
-            else
-                return -1;
+
+            return -1;
+
+            //int count = v.Length;
+            //if (count == 0)
+            //    return -1;
+            //int left = 0;
+            //int right = count - 1;
+            //int middle = (left + right) / 2;
+            //while (left < right && v[middle] != x) {
+            //    if (v[middle] < x)
+            //        left = middle + 1;
+            //    else
+            //        right = middle - 1;
+            //    middle = (left + right) / 2;
+            //}
+
+            //return -2;
+
         }
 
     }
