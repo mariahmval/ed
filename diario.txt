@@ -40,10 +40,14 @@ Creamos HolaMundo.java, compilamos y ejecutamos.
  apt install -y monodevelop
 
 20181119
-modificado .gitignore para excluir directorios y ficheros de .net
+ Modificado .gitignore para excluir directorios y ficheros de .net
 
 20181126
-Creados CVector, VectorTest y algoritmo de búsqueda binaria en MonoDevelop.
+ Creados CVector, VectorTest y algoritmo de búsqueda binaria en MonoDevelop.
 
 20181126
-Explicaciones sobre el algoritmo de búsqueda binaria y modificación del algoritmo.
+ Explicaciones sobre el algoritmo de búsqueda binaria y modificación del algoritmo.
+
+20181203
+ GTK, interfaz gráfica. Creado CGtk con interfaz gráfica sencilla en la que se introduce un nombre y
+ devuelve un saludo con dicho nombre.
