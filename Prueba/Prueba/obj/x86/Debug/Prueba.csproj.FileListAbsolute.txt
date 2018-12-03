@@ -1,6 +1,0 @@
-/home/marmun01/ed/Prueba/Prueba/bin/Debug/Prueba.exe
-/home/marmun01/ed/Prueba/Prueba/bin/Debug/Prueba.pdb
-/home/marmun01/ed/Prueba/Prueba/obj/x86/Debug/Prueba.csprojAssemblyReference.cache
-/home/marmun01/ed/Prueba/Prueba/obj/x86/Debug/Prueba.csproj.CoreCompileInputs.cache
-/home/marmun01/ed/Prueba/Prueba/obj/x86/Debug/Prueba.exe
-/home/marmun01/ed/Prueba/Prueba/obj/x86/Debug/Prueba.pdb

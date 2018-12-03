@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prueba", "Prueba\Prueba.csproj", "{8CF1A4BC-086B-4F98-A0AF-C2D2F8E27EA0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPrueba", "Prueba\CPrueba.csproj", "{8CF1A4BC-086B-4F98-A0AF-C2D2F8E27EA0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
