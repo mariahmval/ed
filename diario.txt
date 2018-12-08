@@ -51,3 +51,7 @@ Creamos HolaMundo.java, compilamos y ejecutamos.
 20181203
  GTK, interfaz gráfica. Creado CGtk con interfaz gráfica sencilla en la que se introduce un nombre y
  devuelve un saludo con dicho nombre.
+
+20181208
+ Creado CSumaGtk, pequeño programa con interfaz gráfica en la que se pueden realizar sumas, restas, divisiones y multiplicaciones
+ simples.
