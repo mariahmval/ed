@@ -55,3 +55,10 @@ Creamos HolaMundo.java, compilamos y ejecutamos.
 20181208
  Creado CSumaGtk, pequeño programa con interfaz gráfica en la que se pueden realizar sumas, restas, divisiones y multiplicaciones
  simples.
+
+20181213
+ Creado CGtkTable, en el que creamos una interfaz gráfica con una tabla y botones a través de
+ una interfaz gráfica.
+
+20181217
+ Creado CBingo, bingo de 90 números con interfaz gráfica.
