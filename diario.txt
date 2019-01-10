@@ -62,3 +62,6 @@ Creamos HolaMundo.java, compilamos y ejecutamos.
 
 20181217
  Creado CBingo, bingo de 90 números con interfaz gráfica.
+
+20190110
+ Creado CBingoAlt, en la que las distintas funciones se dividen en clases.
