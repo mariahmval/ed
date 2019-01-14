@@ -7,6 +7,8 @@ public partial class MainWindow
 
 	private global::Gtk.HBox hbox1;
 
+	private global::Gtk.Label labelNumero;
+
 	private global::Gtk.Button buttonAdelante;
 
 	protected virtual void Build()
@@ -25,6 +27,15 @@ public partial class MainWindow
 		this.hbox1.Name = "hbox1";
 		this.hbox1.Spacing = 6;
 		// Container child hbox1.Gtk.Box+BoxChild
+		this.labelNumero = new global::Gtk.Label();
+		this.labelNumero.Name = "labelNumero";
+		this.labelNumero.LabelProp = global::Mono.Unix.Catalog.GetString("Pulsa adelante para comenzar");
+		this.labelNumero.Justify = ((global::Gtk.Justification)(1));
+		this.hbox1.Add(this.labelNumero);
+		global::Gtk.Box.BoxChild w1 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.labelNumero]));
+		w1.Position = 1;
+		w1.Fill = false;
+		// Container child hbox1.Gtk.Box+BoxChild
 		this.buttonAdelante = new global::Gtk.Button();
 		this.buttonAdelante.CanFocus = true;
 		this.buttonAdelante.Name = "buttonAdelante";
@@ -32,15 +43,15 @@ public partial class MainWindow
 		this.buttonAdelante.UseUnderline = true;
 		this.buttonAdelante.Label = "gtk-go-forward";
 		this.hbox1.Add(this.buttonAdelante);
-		global::Gtk.Box.BoxChild w1 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.buttonAdelante]));
-		w1.PackType = ((global::Gtk.PackType)(1));
-		w1.Position = 2;
-		w1.Expand = false;
-		this.vBox.Add(this.hbox1);
-		global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.vBox[this.hbox1]));
-		w2.Position = 0;
+		global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.buttonAdelante]));
+		w2.PackType = ((global::Gtk.PackType)(1));
+		w2.Position = 2;
 		w2.Expand = false;
-		w2.Fill = false;
+		this.vBox.Add(this.hbox1);
+		global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.vBox[this.hbox1]));
+		w3.Position = 0;
+		w3.Expand = false;
+		w3.Fill = false;
 		this.Add(this.vBox);
 		if ((this.Child != null))
 		{

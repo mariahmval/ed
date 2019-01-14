@@ -23,7 +23,16 @@
               <placeholder />
             </child>
             <child>
-              <placeholder />
+              <widget class="Gtk.Label" id="labelNumero">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Pulsa adelante para comenzar</property>
+                <property name="Justify">Right</property>
+              </widget>
+              <packing>
+                <property name="Position">1</property>
+                <property name="AutoSize">False</property>
+                <property name="Fill">False</property>
+              </packing>
             </child>
             <child>
               <widget class="Gtk.Button" id="buttonAdelante">

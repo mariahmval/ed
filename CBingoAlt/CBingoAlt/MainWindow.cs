@@ -12,8 +12,12 @@ public partial class MainWindow : Gtk.Window
         Bombo bombo = new Bombo();
 
         buttonAdelante.Clicked += delegate {
-            int numero = bombo.sacarBola();
+            int numero = bombo.SacarBola();
             panel.Marcar(numero);
+            labelNumero.Text = numero.ToString();
+            buttonAdelante.Sensitive = bombo.QuedanBolas();
+            //if (!bombo.QuedanBolas())
+                //buttonAdelante.Sensitive = false;
         };
 
 
