@@ -65,3 +65,12 @@ Creamos HolaMundo.java, compilamos y ejecutamos.
 
 20190110
  Creado CBingoAlt, en la que las distintas funciones se dividen en clases.
+
+20190114
+ Terminado CBingoAlt y creado CWindow para trastear con ventanas emergentes.
+
+20190117
+ Primera parte de la instalación Android Studio.
+
+20190121
+ Instalación de Android Studio terminada y creada MyFirstApp.
